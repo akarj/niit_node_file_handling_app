@@ -86,7 +86,7 @@ project-root/
 │   │   ├── eventBus.utils.js              # Event bus for centralise service for file monitoring, and other operations
 │   |   └── fileUtils.utils.js             # Utilities for chunking files and comparing files based on size
 │   └── store
-│   |   └── processedFiles.json            # stores already processed file name
+│   |   └── processedFiles.store.json            # stores already processed file name
 │
 ├── index.js
 ├── package-lock.json                      # For ensuring that the same dependencies are installed consistently
