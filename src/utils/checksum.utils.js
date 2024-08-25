@@ -1,3 +1,6 @@
+const fs = require('fs-extra');
+const crypto = require('crypto');
+
 function calculateFileChecksum(filePath) {
 	const fileBuffer = fs.readFileSync(filePath);
 	return calculateBufferChecksum(fileBuffer);

@@ -1,24 +1,3 @@
-// const path = require('path');
-// const fs = require('fs-extra');
-// const eventBus = require('../utils/eventBus.utils');
-// const { chunkFile } = require('../utils/fileUtils.utils');
-// const outputDir = path.join(__dirname, '../../output');
-// const chunkSize = '10m';
-// const moment = require('moment-timezone');
-
-// eventBus.on('ProcessFile', async filePath => {
-// 	const timestamp = moment().tz('Asia/Kolkata').format('YYYY-MM-DD HH:mm:ss');
-// 	try {
-// 		await fs.ensureDir(outputDir);
-// 		await chunkFile(filePath, chunkSize, outputDir);
-// 		console.log(`[${timestamp}] File chunked successfully: ${filePath}`);
-// 		eventBus.emit('FileChunked', filePath);
-// 	} catch (error) {
-// 		console.error(`[${timestamp}] Error chunking file:`, error);
-// 		eventBus.emit('ChunkingFailed', filePath);
-// 	}
-// });
-
 const path = require('path');
 const fs = require('fs-extra');
 const { exec } = require('child_process');

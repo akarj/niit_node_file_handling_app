@@ -5,7 +5,7 @@ const eventBus = require('../utils/eventBus.utils');
 const inputDir = path.join(__dirname, '../../input');
 const moment = require('moment-timezone');
 
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/1 * * * *', () => {
 	const timestamp = moment().tz('Asia/Kolkata').format('YYYY-MM-DD HH:mm:ss');
 	console.log(`[${timestamp}] Scanning input folder...`);
 	fs.readdir(inputDir, (err, files) => {
