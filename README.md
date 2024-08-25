@@ -125,7 +125,7 @@ Follow these steps to run the Real-Time File Handling Application:
 First, clone the repository to linux device:
 
 ```bash
-git clone https://github.com/your-repo/real-time-file-handling.git
+git clone https://github.com/akarj/niit_node_file_handling_app.git
 cd real-time-file-handling
 ```
 
